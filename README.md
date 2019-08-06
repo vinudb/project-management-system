@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a minimal project management system with features like, employee creation, project creation, tasks creation, updation and deletion.
 
-## Available Scripts
+LIVE IMPLEMENTATION: https://minimal-project-manager.herokuapp.com/
 
-In the project directory, you can run:
+LIVE json-server URL: https://minimal-project-manager-api.herokuapp.com/
 
-### `npm start`
+To view the output in the development mode, follow the steps as given below:
+1) In the console, navigate to the project folder.
+2) Run command "npm install". This will install all the dependencies and creates a node-modules folder.
+   This process takes around 5-8 mins to complete.
+4) Run command "npm start". Runs the app in the development mode.
+   Open [http://localhost:3000] to view it in the browser.
+5) Run command "npm test" to run all the test cases.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Highlights:-
+- Used fake api live json-server to perform API calls for fetching, updating, adding and deleting employee, project, tasks.
+- Used momnet library for handling with the dates
+- Used node-sass library for using scss and it's features
+- Redux for managing the store values.
+- The design is responsive.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Features:-
+- Creating a new employee with a given first name, last name and a direct supervisor
+- Display/View all employees
+- Creating a new project with a given name, a start date and a time slack
+- Assign a project to an employee (an employee can only work on two projects at the same time)
+- Display/View all projects
+- Creating a new task with a given name, a description of this task and estimated days needed to
+complete it
+- Assign a task to a project: By this the attributes „assigned tasks" and „end date" will be updated
+automatically
+- Display/View all tasks for a given project
+- Delete a task and also updating the underlying references
+- Delete a project and also updating the underlying references
+- Getting the total days needed for a given list of projects (assuming that projects can‘t be worked on
+parallel)
