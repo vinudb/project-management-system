@@ -1,0 +1,40 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "firstName": "Vinay",
+      "lastName": "Sridhara",
+      "supervisor": "Dhruba Banerjee",
+      "project1": "My New Project",
+      "project2": ""
+    },
+    {
+      "id": 2,
+      "firstName": "Dhruba",
+      "lastName": "Banerjee",
+      "supervisor": "",
+      "project1": "",
+      "project2": ""
+    }
+  ],
+  "projects": [
+    {
+      "startDate": "2019-08-01T10:00:00.000Z",
+      "endDate": "2019-08-09T10:00:00.000Z",
+      "projectName": "My New project",
+      "slackTime": "1",
+      "duration": 8,
+      "assignedTo": "1",
+      "id": 1
+    }
+  ],
+  "assignedTasks": [
+    {
+      "name": "First commit",
+      "description": "POC and first commit",
+      "duration": "5",
+      "projectId": "1",
+      "id": 2
+    }
+  ]
+}

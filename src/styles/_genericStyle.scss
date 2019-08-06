@@ -1,0 +1,90 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.semiTitles{
+    font-size: 1.1rem;
+    padding-top: 0.4rem;
+    font-family: fantasy;
+}
+
+.content-container {
+    margin: 0 auto;
+    padding: 0 1.6rem;
+    max-width: 80rem; 
+    @media (min-width: 45rem) {
+          padding: 1.5rem 20rem;
+    }
+}
+  
+.listItem{
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin-bottom: 10px;
+    background-color: $dark-grey;
+    color: white;
+}
+
+.listItemProjectTile{
+    @extend .listItem;
+    background-color: darkgoldenrod;
+}
+
+.flexJustifySpaceBtw{
+  display: flex;
+  justify-content: space-between;
+}
+
+.employeeItemProjects{
+    display: flex;
+    flex-direction: column;
+}
+
+.alignCenter{
+    margin-bottom: $s-size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    text-align: center;
+    color: $dark-grey;
+}
+
+.projectItemRight{
+    text-align: right;
+}
+
+.closeProjectViewerContainer{
+    text-align: right;
+}
+
+.closeProjectViewer{
+    cursor: pointer;
+}
+
+.listItemTitle{
+    font-size: 1.0rem;
+    color: $goldYellow;
+}
+
+.listItemTitleContrast{
+    font-size: 1.0rem;
+    color: $dark-grey;
+    font-weight: bold;
+}
+  
+.listItemValue{
+    font-size: 1.0rem;
+    color: white;
+}
