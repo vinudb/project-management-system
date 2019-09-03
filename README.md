@@ -1,13 +1,10 @@
 This is a minimal project management system with features like, employee creation, project creation, tasks creation, updation and deletion.
 
-LIVE IMPLEMENTATION: https://minimal-project-manager.herokuapp.com/
-
-LIVE json-server URL: https://minimal-project-manager-api.herokuapp.com/
-
 To view the output in the development mode, follow the steps as given below:
 1) In the console, navigate to the project folder.
 2) Run command "npm install". This will install all the dependencies and creates a node-modules folder.
    This process takes around 5-8 mins to complete.
+3) Run command "npm run startServer" to run the json-server locally on [http://localhost:3010]
 4) Run command "npm start". Runs the app in the development mode.
    Open [http://localhost:3000] to view it in the browser.
 5) Run command "npm test" to run all the test cases.
